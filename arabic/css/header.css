@@ -1,0 +1,289 @@
+
+/* nav bar */
+
+
+.subbar{
+    background-color: #2b2b2b;
+    display: flex;
+    padding: 14px 50px ;
+    justify-content: space-between;
+    font-size: 14px;
+color: white;
+font-weight: 600;
+
+}
+@media (max-width: 767px) {
+  .subbar{
+
+    padding: 14px 15px ;
+
+
+}
+}
+.subbar a{
+font-size: 14px;
+color: white;
+}
+.headerdes {
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+    justify-content: space-between;
+    height: 100px;
+
+    background-color: #010101;
+
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    align-items: center;
+    transition: background-color 0.3s ease, height 0.3s ease;
+    /* Added transition for smooth effect */
+    z-index: 99;
+
+    font-family: 'Quicksand', sans-serif;
+  
+
+  }
+  .smicon{
+    margin-left: 50px;
+  }
+  /* Styling for the scrolled header */
+  .headerdes.scrolled {
+    background-color: #333;
+    /* New background color when scrolled */
+    height: 70px;
+    /* New height when scrolled */
+  }
+  
+  .headerdes ul {
+    display: flex;
+    list-style: none;
+
+justify-content: end;
+
+    text-transform: lowercase;
+  
+  }
+  .headerdes li{
+    margin-left: 3vw;
+  }
+  
+  .headerdes ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    margin-top: 3px;
+  }
+  
+  .headerdes ul li:hover:after {
+    width: 100%;
+  }
+  .headerdes ul li.active::after{
+    width: 100%;
+  }
+  .headerdes ul li.active:hover:after{
+    width: 80%;
+    opacity: 0.5;
+  }
+  .headerdes ul li.active:hover{
+  
+    opacity: 0.5;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 50px;
+  }
+  
+  @media (max-width: 767px) {
+    .logo img {
+      height: 50px;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+  }
+  
+  .headerdes a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .logo {
+    display: flex;
+    margin-left: 5%;
+  }
+  
+  /* create menu that is showing when use mobile */
+  .menu {
+    color: #ffffff;
+    display: none;
+    margin-left: 5%;
+    font-size: 30px;
+  
+  }
+  
+  
+  @media (max-width: 767px) {
+    .headerdes ul {
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+  
+  }
+  
+  .menusec {
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 999;
+    background-color: #000000b3;
+    top: 0;
+    width: 100%;
+    display: none;
+    transform: rotateY(0deg);
+    transition: 0.8s;
+    /* link with java script menu code delay  */
+  
+    transform-origin: left center;
+  
+  }
+  
+  .hiddenf {
+    transform: rotateY(-90deg);
+    z-index: 999;
+  }
+  
+  .menusec1 {
+    min-height: 100vh;
+    background-color: #ffffff;
+    width: 80%;
+  }
+  
+  .menuclose {
+    font-size: 30px;
+    width: 100%;
+    text-align: right;
+  
+  }
+  
+  .menuclose i {
+    margin: 30px 50px;
+  }
+  
+  @media (max-width: 767px) {
+    .menusec {
+      display: block;
+    }
+  }
+  
+  .menusec ul {
+    font-size: 20px;
+    list-style: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .menusec li {
+    margin-bottom: 40px;
+  
+  }
+  
+  .menucontent {
+    margin: 20%;
+  }
+  
+  .menusec a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+  
+  }
+  
+  .menusec .hbar {
+    height: 5px;
+    width: 100%;
+    background: #3333330e;
+    margin-top: 80px;
+  }
+  
+  .menusec p {
+    font-size: 14px;
+  }
+  
+  .menusec .email {
+    font-weight: 600;
+    margin-bottom: 30%;
+    padding-bottom: 100px;
+  }
+  .headerdes i{
+    margin-right: 15px;
+    transition: 0.2s;
+  }
+  .fa-whatsapp.f{
+    font-size: 24px;
+  }
+  .fa-facebook{
+    font-size: 22.5px;
+  }
+  .headerdes i:hover{
+    scale: 1.2;
+  }
+
+
+
+
+
+
+  .footer{
+    background-color: #010101;
+    padding: 100px 30px;
+    color: white;
+  }
+  .footer .sec1{
+display: flex;
+width: 100%;
+justify-content: space-between;
+  }
+  .footer ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  @media (max-width: 767px) {
+    .footer .sec1{
+flex-direction: column;
+        }
+        .footer ul{
+   flex-direction: column;
+        }
+   }
+  .footer a{
+    color: white;
+  }
+  
+.pixellark {
+  color: rgb(255, 255, 255);
+  position: relative;
+
+}
+
+.pixellarkcontainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.policies {
+  color: #ffffff85;
+}
